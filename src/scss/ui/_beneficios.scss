@@ -1,0 +1,21 @@
+@use '../custom' as *;
+@use 'utils/utils' as m;
+
+.beneficios{
+    h2{
+        display: inline-block;
+        @include m.headingBorder($secondary, $white);
+    }
+
+    .imagen{
+
+        @include media-breakpoint-up(md){
+            transition-property: transform;
+            transition-duration: .3s;
+            &:hover{
+                transform: rotate(-5deg) scale(1.1);
+            }
+        };
+        
+    }
+}

@@ -1,0 +1,9 @@
+@use '../custom' as *;
+@use '../utils/utils' as m;
+
+.crea-podcast{
+    h2{
+        display: inline-block;
+        @include m.headingBorder($secondary, $primary);
+    }
+}
